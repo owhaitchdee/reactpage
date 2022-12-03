@@ -29,7 +29,7 @@ function ModalForm() {
       getData.append('fname', fname);
       getData.append('lname', lname);
       getData.append('age', age);
-      getData.append('function', 'insert');
+      getData.append('function', 'insert'); 
       
       axios({
           method: 'POST',

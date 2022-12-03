@@ -8,9 +8,9 @@ import { LinkContainer } from "react-router-bootstrap";
 
 function NavbarD(){
     return (
-        <Navbar bg="dark" variant="dark" expand="lg" style={{height:'50px',paddingLeft:'5%',paddingRight:'5%', fontSize:'.9rem'}}>
+        <Navbar bg="dark" variant="dark" expand="lg" style={{height:'60px',paddingLeft:'3%',paddingRight:'3%', fontSize:'.9rem'}}>
         <LinkContainer to="/reactpage" fluid>
-          <Navbar.Brand><img src={Logo} alt='logo' style={{height:'45px',paddingRight:'10px',verticalAlign:'middle'}} /> 
+          <Navbar.Brand><img src={Logo} alt='logo' style={{height:'40px',paddingRight:'10px',verticalAlign:'middle'}} /> 
           </Navbar.Brand>
         </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
