@@ -1,4 +1,4 @@
-import {useState,useEffect} from 'react';
+import {useEffect,useState} from 'react';
 import axios from 'axios';
 // import FloatingLabel from 'react-bootstrap/FloatingLabel';
 // import Form from 'react-bootstrap/Form';
@@ -128,22 +128,6 @@ function Student(){
             <ModalForm/>
             </Card>
              ))}
-            {/* <div class='container p-3' style={{width:"500px"}}>
-                <form>
-                    <FloatingLabel controlId="floatingInput" label="First Name" className="mb-3">
-                    <Form.Control type="text" class="form-control" id="fname" name="fname" placeholder="Tom"  value={fname} onChange = {(e) => setFname(e.target.value)}/>
-                    </FloatingLabel>
-                    <FloatingLabel controlId="floatingInput" label="Last Name" className="mb-3">
-                        <Form.Control type="text" class="form-control" id="lname" name="lname" placeholder="Smith"  value={lname} onChange = {(e) => setLname(e.target.value)}/>
-                    </FloatingLabel>
-                    <FloatingLabel controlId="floatingInput" label="Age" className="mb-3">
-                        <Form.Control type="number" class="form-control" id="age" name="age" placeholder="0"  value={age} onChange = {(e) => setAge(e.target.value)}/>
-                    </FloatingLabel>
-                    <center>
-                    <Button as="input" type="submit" onClick={submitBtn} variant="dark" />{' '}
-                    </center>
-                </form>
-            </div> */}
         </Container>
     )
 }
