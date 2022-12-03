@@ -43,7 +43,7 @@ function ModalForm() {
           console.log(students);
           });
       }).catch(function(error){
-          alert ("Error displaying");
+          alert ("Error posting");
           console.log(error);
       });
     }
@@ -67,7 +67,7 @@ function ModalForm() {
     </div>
         </Modal.Header>
         <Modal.Body>
-        <form>
+        <form action="">
                     <FloatingLabel controlId="floatingInput" label="First Name" className="mb-3" style={{color:"black"}}>
                     <Form.Control type="text" class="form-control" id="fname" name="fname" placeholder="Tom"  value={fname} onChange = {(e) => setFname(e.target.value)}/>
                     </FloatingLabel>

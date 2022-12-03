@@ -6,7 +6,7 @@ import Image from 'react-bootstrap/Image';
 function About(){
     return (
         <Container style={{
-            color: 'white', textAlign: 'center', padding: '3% 10%'
+            color: 'white', textAlign: 'center', padding: '5% 10%'
           }}>
                 <h3> My Profile </h3>    
                 {['Dark'].map((variant) => (
