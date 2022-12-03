@@ -9,25 +9,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/main.css';
 
 function App() {
-  // let component;
-  // console.log(window.location.pathname);
-  // switch (window.location.pathname){
-  //   case '/home':
-  //     component = <Home/>
-  //   break;
-  //   case '/about':
-  //     component = <About/>
-  //   break;
-  //   case '/gallery':
-  //     component = <Gallery/>
-  //   break;
-  // }
-
   return (
     <div>
       <NavbarD/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/reactpage" element={<Home/>}/>
         <Route path="/home" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/team" element={<Team/>}/>
