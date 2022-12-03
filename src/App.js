@@ -11,14 +11,16 @@ import './css/main.css';
 function App() {
   return (
     <div>
-      <NavbarD/>
-      <Routes>
-        <Route path="/reactpage" element={<Home/>}/>
-        <Route path="/home" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/team" element={<Team/>}/>
-        <Route path="/gallery" element={<Gallery/>}/>
-      </Routes>
+      <Route path="/reactpage" element={<Home/>}>
+       <NavbarD/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/home" element={<Home/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/team" element={<Team/>}/>
+          <Route path="/gallery" element={<Gallery/>}/>
+        </Routes>
+      </Route>
     </div>
   )
 }
