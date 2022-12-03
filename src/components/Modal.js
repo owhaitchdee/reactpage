@@ -24,7 +24,8 @@ function ModalForm() {
       });
   },[]);
 
-  const submitBtn = function(){
+  const submitBtn = function(e){
+      e.preventDefault();
       let getData = new FormData();
       getData.append('fname', fname);
       getData.append('lname', lname);
