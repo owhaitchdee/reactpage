@@ -13,7 +13,7 @@ function App() {
     <div>
       <NavbarD/>
       <Routes>
-        <Route path="/reactpage" element={<Home/>}/>
+        <Route path="/reactpage/" element={<Home/>}/>
         <Route path="/home" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/team" element={<Team/>}/>
