@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/reactprofile/static/css/main.5fbc4603.css",
+    "main.js": "/reactprofile/static/js/main.b2ed9275.js",
+    "static/media/but_rock.png": "/reactprofile/static/media/but_rock.1c3542ab77ef34c54fe0.png",
+    "static/media/UIworks.png": "/reactprofile/static/media/UIworks.c1f64b5943deb8a17377.png",
+    "static/media/bg.jpg": "/reactprofile/static/media/bg.5ea67d16e6133f9aa562.jpg",
+    "static/media/mobiledev.png": "/reactprofile/static/media/mobiledev.86d15a7dec49d0dbd168.png",
+    "static/media/mobile.png": "/reactprofile/static/media/mobile.644f04f72cf98850cb37.png",
+    "static/media/profile.jpg": "/reactprofile/static/media/profile.70bc8c6b03eeea66f2b0.jpg",
+    "static/media/rgblights.jpg": "/reactprofile/static/media/rgblights.5a790753d7589b82a730.jpg",
+    "static/media/calc.jpg": "/reactprofile/static/media/calc.f050adc90285716969a3.jpg",
+    "static/media/samplegallery.jpg": "/reactprofile/static/media/samplegallery.797aeb18fc56216555b9.jpg",
+    "static/media/converter.jpg": "/reactprofile/static/media/converter.2e8c574520ba6a4fb50f.jpg",
+    "index.html": "/reactprofile/index.html",
+    "main.5fbc4603.css.map": "/reactprofile/static/css/main.5fbc4603.css.map",
+    "main.b2ed9275.js.map": "/reactprofile/static/js/main.b2ed9275.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5fbc4603.css",
+    "static/js/main.b2ed9275.js"
+  ]
+}
