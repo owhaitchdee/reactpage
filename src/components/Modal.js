@@ -63,31 +63,26 @@ function ModalForm() {
         <Modal.Header>
           <Modal.Title>Add Member</Modal.Title>
           <div className="bg-dark p-3">
-      <CloseButton variant="white" />
+      <CloseButton variant="white"  onClick={handleClose}/>
     </div>
         </Modal.Header>
         <Modal.Body>
-        <form action="">
-                    <FloatingLabel controlId="floatingInput" label="First Name" className="mb-3" style={{color:"black"}}>
-                    <Form.Control type="text" class="form-control" id="fname" name="fname" placeholder="Tom"  value={fname} onChange = {(e) => setFname(e.target.value)}/>
-                    </FloatingLabel>
-                    <FloatingLabel controlId="floatingInput" label="Last Name" className="mb-3" style={{color:"black"}}>
-                        <Form.Control type="text" class="form-control" id="lname" name="lname" placeholder="Smith"  value={lname} onChange = {(e) => setLname(e.target.value)}/>
-                    </FloatingLabel>
-                    <FloatingLabel controlId="floatingInput" label="Age" className="mb-3" style={{color:"black"}}>
-                        <Form.Control type="number" class="form-control" id="age" name="age" placeholder="0"  value={age} onChange = {(e) => setAge(e.target.value)}/>
-                    </FloatingLabel>
-                    <center>
-                    <Button as="input" type="submit" onClick={submitBtn} variant="primary" />{' '}
-                    </center>
-                </form>
+          <Form id="addmember" action="">
+              <FloatingLabel controlId="floatingInput" label="First Name" className="mb-3" style={{color:"black"}}>
+              <Form.Control type="text" class="form-control" id="fname" name="fname" placeholder="Tom"  value={fname} onChange = {(e) => setFname(e.target.value)}/>
+              </FloatingLabel>
+              <FloatingLabel controlId="floatingInput" label="Last Name" className="mb-3" style={{color:"black"}}>
+                  <Form.Control type="text" class="form-control" id="lname" name="lname" placeholder="Smith"  value={lname} onChange = {(e) => setLname(e.target.value)}/>
+              </FloatingLabel>
+              <FloatingLabel controlId="floatingInput" label="Age" className="mb-3" style={{color:"black"}}>
+                  <Form.Control type="number" class="form-control" id="age" name="age" placeholder="0"  value={age} onChange = {(e) => setAge(e.target.value)}/>
+              </FloatingLabel>
+              <center>
+              {/* <Button as="input" type="reset" onClick={clearForm} variant="primary2" />{' '} */}
+              <Button as="input" type="submit" onClick={submitBtn} variant="primary" />{' '}
+              </center>
+          </Form>
         </Modal.Body>
-        {/* <Modal.Footer>
-          <Button variant="primary2" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary">Understood</Button>
-        </Modal.Footer> */}
       </Modal>
     </>
   );

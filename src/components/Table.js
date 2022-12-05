@@ -1,7 +1,5 @@
 import {useEffect,useState} from 'react';
 import axios from 'axios';
-// import FloatingLabel from 'react-bootstrap/FloatingLabel';
-// import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Table from 'react-bootstrap/Table';
 import Container from 'react-bootstrap/Container';
@@ -9,45 +7,16 @@ import Card from 'react-bootstrap/Card';
 import ModalForm from './Modal'
 
 function Student(){
-    // const [fname, setFname] = useState();
-    // const [lname, setLname] = useState();
-    // const [age, setAge] = useState();
     const [students, setStudents] = useState([]);
 
     useEffect(()=>{
         const url = 'http://localhost/sat-app/db.php';
         axios.get(url).then((response)=>{
             setStudents(response.data);
-            // console.log(students);
         });
     },[]);
 
-    // const submitBtn = function(){
-    //     let getData = new FormData();
-    //     getData.append('fname', fname);
-    //     getData.append('lname', lname);
-    //     getData.append('age', age);
-    //     getData.append('function', 'insert');
-        
-    //     axios({
-    //         method: 'POST',
-    //         url: 'http://localhost/sat-app/db.php',
-    //         data: getData,
-    //         config: 'Content-Type="multipart/form-data"'
-    //     }).then(function (result){
-    //         const url = 'http://localhost/sat-app/db.php';
-    //         axios.get(url).then((response)=>{
-    //             setStudents(response.data);
-    //         console.log(students);
-    //         });
-    //     }).catch(function(error){
-    //         alert ("Error displaying");
-    //         console.log(error);
-    //     });
-    // }
-
     const delBtn = function(e){
-        // alert (e.currentTarget.id);
         let getData = new FormData();
         getData.append('id', e.currentTarget.id);
         getData.append('function', 'delete');
