@@ -2,13 +2,12 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../img/header.png';
-import Button from 'react-bootstrap/Button';
-// import FormModal from './Modal';
+// import LoginForm from './Login';
 import { LinkContainer } from "react-router-bootstrap";
 
 function NavbarD(){
     return (
-        <Navbar bg="dark" variant="dark" expand="lg" style={{height:'60px',paddingLeft:'3%',paddingRight:'3%', fontSize:'.9rem'}}>
+        <Navbar bg="dark" variant="dark" expand="lg" style={{height:'60px',paddingLeft:'3%',paddingRight:'3%', fontSize:'.9rem', zIndex:'999'}}>
         <LinkContainer to="/reactpage" fluid>
           <Navbar.Brand><img src={Logo} alt='logo' style={{height:'40px',paddingRight:'10px',verticalAlign:'middle'}} /> 
           </Navbar.Brand>
@@ -40,11 +39,7 @@ function NavbarD(){
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
-              <div className="float-end">
-                <span style={{padding:'5px'}}></span>
-                <Button className='btn btn-primary'>Register
-                </Button>        
-              </div>
+              {/* <LoginForm/> */}
           </Navbar.Collapse>
       </Navbar>
 

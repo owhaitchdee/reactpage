@@ -69,7 +69,7 @@ function ModalForm() {
         <Modal.Body>
           <Form id="addmember" action="">
               <FloatingLabel controlId="floatingInput" label="First Name" className="mb-3" style={{color:"black"}}>
-              <Form.Control type="text" class="form-control" id="fname" name="fname" placeholder="Tom"  value={fname} onChange = {(e) => setFname(e.target.value)}/>
+              <Form.Control type="text" className="form-control" id="fname" name="fname" placeholder="Tom"  value={fname} onChange = {(e) => setFname(e.target.value)}/>
               </FloatingLabel>
               <FloatingLabel controlId="floatingInput" label="Last Name" className="mb-3" style={{color:"black"}}>
                   <Form.Control type="text" class="form-control" id="lname" name="lname" placeholder="Smith"  value={lname} onChange = {(e) => setLname(e.target.value)}/>
