@@ -43,7 +43,6 @@ function Student(){
         getData.append('id',e.currentTarget.title);
         getData.append('fname',document.getElementById('fname'+e.currentTarget.title).value);
         getData.append('lname',document.getElementById('lname'+e.currentTarget.title).value);
-        getData.append('age',document.getElementById('age'+e.currentTarget.title).value);
         getData.append('function','update');
         axios({
             method: 'POST',
@@ -73,7 +72,6 @@ function Student(){
                         <th style={{textAlign:'center',verticalAlign:'middle'}}>Student ID</th>
                         <th style={{textAlign:'center',verticalAlign:'middle'}}>First Name</th>
                         <th style={{textAlign:'center',verticalAlign:'middle'}}>Last Name</th>
-                        <th style={{textAlign:'center',verticalAlign:'middle'}}>Age</th>
                         <th style={{textAlign:'center',verticalAlign:'middle'}}>Action</th>
                     </tr>
                 </thead>

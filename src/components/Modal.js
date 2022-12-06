@@ -13,7 +13,7 @@ function ModalForm() {
 
   const [fname, setFname] = useState();
   const [lname, setLname] = useState();
-  const [age, setAge] = useState();
+  // const [age, setAge] = useState();
   const [students, setStudents] = useState([]);
 
   useEffect(()=>{
@@ -28,7 +28,6 @@ function ModalForm() {
       let getData = new FormData();
       getData.append('fname', fname);
       getData.append('lname', lname);
-      getData.append('age', age);
       getData.append('function', 'insert'); 
       
       axios({
@@ -74,9 +73,9 @@ function ModalForm() {
               <FloatingLabel controlId="floatingInput" label="Last Name" className="mb-3" style={{color:"black"}}>
                   <Form.Control type="text" class="form-control" id="lname" name="lname" placeholder="Smith"  value={lname} onChange = {(e) => setLname(e.target.value)}/>
               </FloatingLabel>
-              <FloatingLabel controlId="floatingInput" label="Age" className="mb-3" style={{color:"black"}}>
+              {/* <FloatingLabel controlId="floatingInput" label="Age" className="mb-3" style={{color:"black"}}>
                   <Form.Control type="number" class="form-control" id="age" name="age" placeholder="0"  value={age} onChange = {(e) => setAge(e.target.value)}/>
-              </FloatingLabel>
+              </FloatingLabel> */}
               <center>
               {/* <Button as="input" type="reset" onClick={clearForm} variant="primary2" />{' '} */}
               <Button as="input" type="submit" onClick={submitBtn} variant="primary" />{' '}

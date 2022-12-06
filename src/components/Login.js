@@ -60,7 +60,7 @@
 //         // Success submit, now validate e-mail adress with axios
 //         let allUsers = [];
         
-//         await axios.get('http://localhost/sat-app/db_login.php')
+//         await axios.get('http://localhost/sat-app/db.php')
 //         .then(resp => {
 //           console.log(resp.data);
           

@@ -2,7 +2,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../img/header.png';
-// import LoginForm from './Login';
+import LoginForm from './LoginModal';
 import { LinkContainer } from "react-router-bootstrap";
 
 function NavbarD(){
@@ -39,7 +39,7 @@ function NavbarD(){
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
-              {/* <LoginForm/> */}
+              <LoginForm/>
           </Navbar.Collapse>
       </Navbar>
 
